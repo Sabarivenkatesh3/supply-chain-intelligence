@@ -270,13 +270,19 @@ SNOWFLAKE_WAREHOUSE=COMPUTE_WH
 SNOWFLAKE_DATABASE=SUPPLY_CHAIN_DB
 SNOWFLAKE_SCHEMA=ANALYTICS
 ```
+## 🧗 Challenges & Learnings
 
+- **Snowflake write-back:** Writing ML outputs back to Snowflake from Python required careful handling of data types and schema alignment — this is a production pattern not commonly seen in fresher portfolios
+- **dbt on Snowflake:** Setting up dbt Core with Snowflake profiles.yml locally and getting lineage to render correctly took significant debugging
+- **Class imbalance in Naive Bayes:** Medium and Low risk classes had poor initial recall — resolved using oversampling which improved High risk F1 to 0.90
+- **Simulated data limitations:** Faker-generated data lacks real temporal patterns which explains the 29.15% MAPE — documented transparently rather than overfitting to hit an arbitrary target
+- **Streamlit + Snowflake secrets:** Configuring st.secrets for cloud deployment vs local .env required understanding two different credential management approaches
 ---
 
 ## 👤 Author
 
 **Sabarivenkatesh Kathirvel**
-Built as a portfolio project targeting Supply Chain Analytics / Data Science roles requiring Snowflake, dbt, Python ML, and Streamlit expertise.
+Built as a portfolio project targeting Supply Chain Analytics and Data Science roles requiring Snowflake, dbt, Python ML, and Streamlit expertise. Designed to reflect real industry workflows — from raw data ingestion through cloud warehousing, statistical analysis, machine learning, and live dashboard deployment.
 
 ---
 
