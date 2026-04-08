@@ -148,8 +148,16 @@ supply-chain-intelligence/
 ### Model 2 — Linear Regression (Demand Forecasting)
 - **Features:** Month, Quarter, Product Category, Lag-1, Lag-2, Rolling Mean (3-month)
 - **Target:** Monthly raw material demand (units)
-- **MAPE: 29.15%** on simulated data (expected <15% on real production data)
+- **MAPE: 29.15%** on simulated data
 - **Forecast horizon:** 30 days per product category
+
+**Model Improvement Attempts:**
+- Added lag features (Lag-1, Lag-2) to capture recent demand patterns
+- Added 3-month rolling mean to smooth short-term noise
+- Tested time-based train/test split (chronological) vs random split — random split yielded better MAPE on simulated data because Faker-generated data lacks real temporal patterns
+- Tested sine/cosine seasonality encoding — no improvement on simulated data
+- **Root cause of 29.15% MAPE:** Simulated data generated via NumPy/Faker has no genuine seasonal signal or trend — the model has nothing real to learn from. On real production data with actual seasonality (festivals, monsoon, harvest cycles), MAPE is expected to drop below 15%
+- This limitation is documented transparently as a portfolio project constraint
 
 ### Model 3 — Naive Bayes (Disruption Risk Classification)
 - **Features:** Location Zone, Payment Terms, OTD Bucket, Lead Time Variance Bucket
@@ -163,6 +171,7 @@ supply-chain-intelligence/
 | Medium | 0.36 | 0.56 | 0.44 |
 | Low | 0.53 | 0.36 | 0.43 |
 
+> **Note:** Medium and Low class F1 scores (0.44, 0.43) reflect class boundary overlap in simulated data. In production, richer supplier history with more granular payment and delivery attributes would improve boundary separation. High-risk class performs strongly (F1: 0.90) which is the most critical class for procurement decisions.
 ---
 
 ## 📊 Key Business KPIs
