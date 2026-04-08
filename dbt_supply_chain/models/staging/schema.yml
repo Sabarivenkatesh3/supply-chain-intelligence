@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: supplier_id
+        tests:
+          - not_null
+      - name: product_category
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Packaging', 'Raw Material', 'Chemicals', 'Electronics', 'Logistics']
+
+  - name: stg_suppliers
+    columns:
+      - name: supplier_id
+        tests:
+          - not_null
+          - unique

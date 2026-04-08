@@ -1,0 +1,33 @@
+[0m19:04:36.585801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF49B72B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5D185B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5D183A0>]}
+
+
+============================== 19:04:36.619713 | 14c13a09-027a-46a2-b395-815ae1c02f04 ==============================
+[0m19:04:36.619713 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:04:36.619713 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Dell\\.dbt', 'invocation_command': 'dbt init dbt_supply_chain', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:04:36.831492 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Dell\.dbt
+[0m19:04:36.858081 [debug] [MainThread]: Starter project path: E:\supply-chain-intelligence\venv\lib\site-packages\dbt\include\starter_project
+[0m19:04:36.891344 [info ] [MainThread]: 
+Your new dbt project "dbt_supply_chain" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:04:36.892343 [info ] [MainThread]: Setting up your profile.
+[0m19:05:57.994757 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:05:57.994757 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:05:57.994757 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:07:02.967187 [info ] [MainThread]: Profile dbt_supply_chain written to C:\Users\Dell\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:07:02.967187 [debug] [MainThread]: Command `dbt init` succeeded at 19:07:02.967187 after 146.66 seconds
+[0m19:07:02.967187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF49B72B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF3417D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020AF5D17A30>]}
+[0m19:07:02.967187 [debug] [MainThread]: Flushing usage events
+[0m19:07:04.536940 [debug] [MainThread]: An error was encountered while trying to flush usage events
