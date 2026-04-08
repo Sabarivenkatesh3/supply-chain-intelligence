@@ -259,5 +259,5 @@ SNOWFLAKE_SCHEMA=ANALYTICS
 
 ## 👤 Author
 
-**Sabari**
+**Sabarivenkatesh Kathirvel**
 Built as a portfolio project targeting Supply Chain Analytics / Data Science roles requiring Snowflake, dbt, Python ML, and Streamlit expertise.
