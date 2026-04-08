@@ -261,4 +261,7 @@ SNOWFLAKE_SCHEMA=ANALYTICS
 
 **Sabarivenkatesh Kathirvel**
 Built as a portfolio project targeting Supply Chain Analytics / Data Science roles requiring Snowflake, dbt, Python ML, and Streamlit expertise.
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sabari%20Venkatesh-blue?logo=linkedin)](https://www.linkedin.com/in/sabarivenkatesh-k/)) | [![GitHub](https://img.shields.io/badge/GitHub-Sabarivenkatesh3-black?logo=github)](https://github.com/Sabarivenkatesh3/))
+
+---
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sabari%20Venkatesh-blue?logo=linkedin)](https://www.linkedin.com/in/sabarivenkatesh-k/)  [![GitHub](https://img.shields.io/badge/GitHub-Sabarivenkatesh3-black?logo=github)](https://github.com/Sabarivenkatesh3/)
