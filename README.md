@@ -81,8 +81,15 @@ Raw Data (CSV / Simulated)
 |--------|-------------|
 | Simulated via Python Faker + NumPy | 200 supplier records with OTD rate, lead time variance, defect rate, location, payment terms |
 | Simulated Orders | 2,000 order records across 5 product categories over 2 years |
+| External Enrichment (Reference) | RBI Commodity Price Index used as reference to simulate demand seasonality patterns for Chemicals and Electronics categories |
+| External Enrichment (Reference) | IMD seasonal rainfall data used as reference to introduce monsoon-period demand spikes in agricultural raw material categories |
 
-> **Note:** Simulated data follows real supply chain distributions. This is standard industry practice when proprietary data cannot be shared. All simulation logic is documented in `src/generate_data.py`. Real production data is expected to yield MAPE < 15%.
+> **Note:** Simulated data follows real supply chain distributions informed by publicly available external sources (RBI, IMD). This is standard industry practice when proprietary data cannot be shared. All simulation logic is documented in `src/generate_data.py`. Real production data with live API integration is expected to yield MAPE < 15%.
+
+### External Data Sources Referenced
+- RBI Commodity Price Index: https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx
+- IMD Seasonal Rainfall Data: https://mausam.imd.gov.in
+- These sources were used to design realistic demand patterns in the simulation — not directly ingested via API in this portfolio version
 
 ---
 
